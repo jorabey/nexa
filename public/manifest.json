@@ -1,0 +1,53 @@
+{
+  "short_name": "Nexa",
+  "name": "Nexa AppStore",
+  "description": "Eng so'nggi mini-ilova va o'yinlar platformasi.",
+  "id": "/store",
+  "start_url": "/store",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0a0c10",
+  "background_color": "#0a0c10",
+  "categories": ["utilities", "games", "entertainment"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ilovalar do'koni",
+      "short_name": "Do'kon",
+      "description": "Ilovalar ro'yxatini ko'rish",
+      "url": "/apps",
+      "icons": [{ "src": "icons/shortcut-store.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Mening ilovalarim",
+      "short_name": "Ilovalarim",
+      "description": "Ulangan ilovalar ro'yxati",
+      "url": "/app-connections",
+      "icons": [{ "src": "icons/shortcut-apps.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Shaxsiy profil",
+      "short_name": "Profil",
+      "description": "Hisob qaydnomasi sozlamalari",
+      "url": "/profile",
+      "icons": [{ "src": "icons/shortcut-profile.png", "sizes": "192x192" }]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+.sub-page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-page__body {
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.sub-error {
+  background: var(--danger-dim);
+  color: var(--danger);
+  border-radius: var(--r-md);
+  padding: 11px 14px;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.sub-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 16px;
+  background: var(--bg-1);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-md);
+}
+
+.sub-info-label {
+  font-size: 13.5px;
+  color: var(--text-2);
+  font-weight: 500;
+}
+
+.sub-info-val {
+  font-size: 14.5px;
+  color: var(--text-0);
+  font-weight: 500;
+}
+
+.sub-section {
+  background: var(--bg-1);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+
+.sub-section-title {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  padding: 0 4px 8px;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--hairline);
+  gap: 12px;
+}
+
+.toggle-row:last-child { border-bottom: none; }
+
+.toggle-row__label {
+  flex: 1;
+}
+
+.toggle-row__title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-0);
+  display: block;
+}
+
+.toggle-row__desc {
+  font-size: 12.5px;
+  color: var(--text-2);
+  display: block;
+  margin-top: 2px;
+}
+
+.ios-toggle {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 50px;
+  height: 28px;
+  border-radius: var(--r-pill);
+  background: var(--bg-3);
+  position: relative;
+  cursor: pointer;
+  transition: background var(--dur-base);
+  flex-shrink: 0;
+  border: none;
+}
+
+.ios-toggle:checked { background: var(--accent); }
+
+.ios-toggle::before {
+  content: '';
+  position: absolute;
+  top: 3px; left: 3px;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform var(--dur-base) var(--ease-spring);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+.ios-toggle:checked::before { transform: translateX(22px); }
+
+@media (min-width: 860px) {
+  .sub-page__body {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 28px 24px;
+  }
+}

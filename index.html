@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" 
+    />
+    
+    <title>Nexa AppStore</title>
+
+    <link rel="manifest" href="/manifest.json" />
+    
+    <meta name="theme-color" content="#0a0c10" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AppStore" />
+    <link rel="apple-touch-icon" href="/icons/icon-512.png" />
+
+    <style>
+      html, body, #root {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0;
+        padding: 0;
+        overflow: hidden !important;
+        background-color: #0a0c10; /* Oq ekran miltillashini yo'qotadi */
+        color: #f1f3f7;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        
+        /* Tizimli cheklovlar */
+        overscroll-behavior: none !important;
+        -webkit-user-select: none !important;
+        user-select: none !important;
+        -webkit-touch-callout: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+        touch-action: manipulation !important;
+      }
+
+      /* iOS notch (chekka xavfsiz joylar) uchun CSS padding o'zgaruvchilari */
+      :root {
+        --safe-top: env(safe-area-inset-top);
+        --safe-bottom: env(safe-area-inset-bottom);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
