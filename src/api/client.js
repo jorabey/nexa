@@ -7,7 +7,7 @@
 
 const BASE_URL = 'https://nexa-server-three.vercel.app/api/v1';
 
-let accessToken = sessionStorage.getItem('accessToken') || null;
+let accessToken = localStorage.getItem('accessToken') || null;
 let refreshPromise = null;
 
 const listeners = new Set();
@@ -24,9 +24,9 @@ function notify() {
 export function setAccessToken(token) {
   accessToken = token;
   if (token) {
-    sessionStorage.setItem('accessToken', token);
+    localStorage.setItem('accessToken', token);
   } else {
-    sessionStorage.removeItem('accessToken');
+    localStorage.removeItem('accessToken');
   }
   notify();
 }
