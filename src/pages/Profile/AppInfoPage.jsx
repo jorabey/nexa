@@ -24,7 +24,7 @@ export default function AppInfoPage() {
 
         <div className="appinfo-hero">
           <OrbitMark size={52} connected />
-          <h2 className="heading" style={{ margin: '12px 0 4px', fontSize: 22 }}>Nexa</h2>
+          <h2 className="heading" style={{ margin: '12px 0 4px', fontSize: 22 }}>Jora Apps</h2>
           <p style={{ color: 'var(--text-2)', fontSize: 14, margin: 0 }}>
             Ilovalar markazi
           </p>
@@ -51,7 +51,7 @@ export default function AppInfoPage() {
         </div>
 
         <p className="appinfo-copy">
-          © {new Date().getFullYear()} Nexa Platform. Barcha huquqlar himoyalangan.
+          © {new Date().getFullYear()} Jora Apps Platform. Barcha huquqlar himoyalangan.
         </p>
       </div>
     </div>
