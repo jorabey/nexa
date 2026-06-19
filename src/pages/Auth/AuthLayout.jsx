@@ -12,7 +12,7 @@ export function AuthLayout({ eyebrow, title, subtitle, children, footer }) {
       <div className="auth__card">
         <div className="auth__brand">
           <OrbitMark size={32} />
-          <span className="auth__brand-name heading">Nexa</span>
+          <span className="auth__brand-name heading">Jora Apps</span>
         </div>
         {eyebrow && <span className="auth__eyebrow">{eyebrow}</span>}
         <h1 className="auth__title heading">{title}</h1>
